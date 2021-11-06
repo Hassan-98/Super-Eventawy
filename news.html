@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Encoding -->
+    <meta charset="utf-8">
+    <!-- Internet Explorer Compatiblity -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Description Meta -->
+    <meta name="description" content="super eventawy courses team">
+    <!-- Keywords Meta -->
+    <meta name="keywords" content="super, eventawy">
+    <!-- Author Meta -->
+    <meta name="author" content="Hassan Ali">
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Page Custom Styles -->
+    <link rel="stylesheet" href="css/news.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <!-- Page Title -->
+    <title>أخبار سوبر إيفينتاوي</title>
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Start Loader -->
+    <div class="loader">
+      <div>
+        <img src="images/logo.jpg">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- End Loader -->
+
+
+    <!-- Start Navbar -->
+    <section class="fixed-top">
+        <div class="highline">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-2 col-lg-3 col-md-3 col-12 phone">
+                <h5><img src="images/map.svg" class="icon"> العنوان</h5>
+                <p>سوهاج المتفرع من ش سوهاج</p>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-3 col-12 address">
+                <h5><img src="images/phone.svg" class="icon"> الموبايل</h5>
+                <p class="ph">+201146321817</p>
+              </div>
+              <div class="col-xl-8 col-lg-6 col-sm-12 col-12 auth">
+                <div class="signedOut">
+                  <button onclick="location.href = 'signup.html'"><img src="images/signup.svg" class="icon"> التسجيل</button>
+                  <button onclick="location.href = 'login.html'"><img src="images/login.svg" class="icon"> الدخول</button>
+                </div>
+                <div class="signedIn">
+                  <i class="fas fa-sort-down user-down"></i>
+                  <span class="auth-name">Hassan Ali</span>
+                  <img src="images/person.png" class="auth-img">
+                  <ul class="user-list">
+                    <li class="user-profile" onclick="location.href = 'profile.html'"><img src="images/user.svg"> الصفحة الشخصية</li>
+                    <li class="user-cp" onclick="location.href = 'control-panel.html'"><img src="images/control-panel.svg"> لوحة التحكم</li>
+                    <li class="user-out"><img src="images/logout.svg"> تسجيل الخروج</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.jpg" alt="logo" class="thumb-sm circle ml-2">
+              <span>سوبر إيفينتاوي</span>
+            </a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><img src="images/home.svg" class="nav-icon"> الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"><img src="images/about.svg" class="nav-icon"> عن الموقع</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="courses.html"><img src="images/courses.svg" class="nav-icon"> الكورسات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html"><img src="images/events.svg" class="nav-icon"> الايفينتات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"><img src="images/news.svg" class="nav-icon"> الاخبار</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html"><img src="images/team.svg" class="nav-icon"> الفريق</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- Start Header -->
+
+    <header class="alternative">
+      <div class="overlay">
+        <div class="container">
+          <div class="head">
+            <h1>الاخبار</h1>
+            <h4>
+                <a href="index.html">الرئيسية</a> <span> <i class="fas fa-long-arrow-alt-left"></i> </span> الاخبار
+            </h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End Header -->
+
+    
+
+    <!-- Start Section News -->
+    <section class="news">
+      <div class="container">
+        <h2>أخر الاخبار</h2>
+        <p>أخر أخبار الكورسات والايفينتات التي يقدمها فريق سوبر إيفينتاوي</p>
+        <div class="row justify-content-center ReciveNews"></div>
+      </div>
+    </section>
+    <!-- End Section News -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-7 col-12 footer-intro">
+              <img src="images/logo.jpg" alt="logo" class="thumb-sm circle ml-2">
+              <h3>سوبر إيفينتاوي</h3>
+              <br>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية.</p>
+          </div>
+          <div class="col-md-4 d-none d-md-block footer-links">
+            <h4>روابط مهمة</h4>
+            <ul>
+              <li onclick="location.href = 'index.html'">الرئيسية</li>
+              <li onclick="location.href = 'courses.html'">الكورسات</li>
+              <li onclick="location.href = 'events.html'">الايفينتات</li>
+              <li onclick="location.href = 'news.html'">الاخبار</li>
+              <li onclick="location.href = 'team.html'">الفريق</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-5 col-12 footer-address">
+            <h4>كيف تصل إلينا</h4>
+            <div class="type1">
+              <h5><img src="images/map.svg" class="icon"> العنوان</h5>
+              <p>سوهاج المتفرع من ش سوهاج</p>
+            </div>
+            <div class="type2">
+              <h5><img src="images/phone.svg" class="icon"> الموبايل</h5>
+              <p class="ph">+201146321817</p>
+            </div>
+          </div>
+        </div>
+        <div class="end"><p>تصميم و برمجة فريق <span>BroCoders</span> &nbsp; | &nbsp; جميع الحقوق محفوظة 2019</p></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- JQuery Library -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Page Custom Scripts -->
+    <script src="js/custom.js"></script>
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <!-- auth & database Scripts -->
+    <script src="js/firebase.js"></script>
+  </body>
+</html>

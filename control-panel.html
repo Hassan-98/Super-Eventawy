@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Encoding -->
+    <meta charset="utf-8">
+    <!-- Internet Explorer Compatiblity -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Description Meta -->
+    <meta name="description" content="super eventawy courses team">
+    <!-- Keywords Meta -->
+    <meta name="keywords" content="super, eventawy">
+    <!-- Author Meta -->
+    <meta name="author" content="Hassan Ali">
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Page Custom Styles -->
+    <link rel="stylesheet" href="css/cp.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <!-- Page Title -->
+    <title>لوحة تحكم المشرفين</title>
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Start Loader -->
+    <div class="loader">
+      <div>
+        <img src="images/logo.jpg">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- End Loader -->
+
+
+    <!-- Start Navbar -->
+    <section class="fixed-top">
+        <div class="highline">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-2 col-lg-3 col-md-3 col-12 phone">
+                <h5><img src="images/map.svg" class="icon"> العنوان</h5>
+                <p>سوهاج المتفرع من ش سوهاج</p>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-3 col-12 address">
+                <h5><img src="images/phone.svg" class="icon"> الموبايل</h5>
+                <p class="ph">+201146321817</p>
+              </div>
+              <div class="col-xl-8 col-lg-6 col-sm-12 col-12 auth">
+                <div class="signedOut">
+                  <button onclick="location.href = 'signup.html'"><img src="images/signup.svg" class="icon"> التسجيل</button>
+                  <button onclick="location.href = 'login.html'"><img src="images/login.svg" class="icon"> الدخول</button>
+                </div>
+                <div class="signedIn">
+                  <i class="fas fa-sort-down user-down"></i>
+                  <span class="auth-name">Hassan Ali</span>
+                  <img src="images/person.png" class="auth-img">
+                  <ul class="user-list">
+                    <li class="user-profile" onclick="location.href = 'profile.html'"><img src="images/user.svg"> الصفحة الشخصية</li>
+                    <li class="user-cp" onclick="location.href = 'control-panel.html'"><img src="images/control-panel.svg"> لوحة التحكم</li>
+                    <li class="user-out"><img src="images/logout.svg"> تسجيل الخروج</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.jpg" alt="logo" class="thumb-sm circle ml-2">
+              <span>سوبر إيفينتاوي</span>
+            </a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><img src="images/home.svg" class="nav-icon"> الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"><img src="images/about.svg" class="nav-icon"> عن الموقع</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="courses.html"><img src="images/courses.svg" class="nav-icon"> الكورسات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html"><img src="images/events.svg" class="nav-icon"> الايفينتات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"><img src="images/news.svg" class="nav-icon"> الاخبار</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html"><img src="images/team.svg" class="nav-icon"> الفريق</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- Start Header -->
+
+    <header class="alternative">
+      <div class="overlay">
+        <div class="container">
+          <div class="head">
+            <h1>لوحة التحكم</h1>
+            <h4>
+                <a href="index.html">الرئيسية</a> <span> <i class="fas fa-long-arrow-alt-left"></i> </span> لوحة التحكم
+            </h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Control Panel -->
+    <section class="control-panel">
+      <div class="container-fluid">
+        <h2>لوحة التحكم في الموقع</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="bar">
+              <button class="general-btn active"><img src="images/general.svg"> <span>عام</span></button>
+              <button class="members-btn"><img src="images/userreg.svg"> <span>الاعضاء</span></button>
+              <button class="courses-btn"><img src="images/courses.svg"> <span>الكورسات</span></button>
+              <button class="events-btn"><img src="images/events.svg"> <span>الايفينتات</span></button>
+              <button class="news-btn"><img src="images/news.svg"> <span>الاخبار</span></button>
+              <button class="team-btn"><img src="images/team.svg"> <span>الفريق</span></button>
+              <button class="regs-btn"><img src="images/reg.svg"> <span>الحجوزات</span></button>
+            </div>
+          </div>
+          <div class="col-12">
+
+            <!-- General Section -->
+            <div class="general">
+              <h3>التحكم العام</h3>
+              <hr>
+
+              <div class="general-bar mb-3">
+                <button class="background-btn active">خلفية الموقع</button>
+                <button class="video-btn">الفيديو التعريفي</button>
+                <button class="stats-btn">الاحصائيات</button>
+                <button class="sponsors-btn">الرعاة</button>
+                <button class="gallery-btn">معرض الصور</button>
+              </div>
+              
+              <div class="container">
+                <div class="background">
+                  <label>تعديل صورة خلفية الموقع</label>
+                  <input type="file" class="background-edit">
+                  <button class="background-editBTN">تعديل</button>
+                </div>
+                
+                <div class="video">
+                  <label>تعديل الفيديو التعريفي</label>
+                  <input type="url" class="video-edit" placeholder="رابط الفيديو التعريفي الجديد (YouTube Embed Only)">
+                  <button class="video-editBTN">تعديل</button>
+                </div>
+                
+                <div class="stats">
+                  <label>تعديل عدد الطلاب</label>
+                  <input type="number" class="stats-students-edit" placeholder="عدد الطلاب">
+                  <button class="stats-students-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل عدد الكورسات</label>
+                  <input type="number" class="stats-courses-edit" placeholder="عدد الكورسات">
+                  <button class="stats-courses-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل عدد المدربين</label>
+                  <input type="number" class="stats-teachers-edit" placeholder="عدد المدربين">
+                  <button class="stats-teachers-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل عدد الانجازات</label>
+                  <input type="number" class="stats-achivements-edit" placeholder="عدد الانجازات">
+                  <button class="stats-achivements-editBTN">تعديل</button>
+                  <hr>
+                </div>
+                
+                <div class="sponsors">
+                  <label>تعديل شعار الراعي #1</label>
+                  <input type="file" class="sponsorOne-edit">
+                  <button class="sponsorOne-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل شعار الراعي #2</label>
+                  <input type="file" class="sponsorTwo-edit">
+                  <button class="sponsorTwo-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل شعار الراعي #3</label>
+                  <input type="file" class="sponsorThree-edit">
+                  <button class="sponsorThree-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل شعار الراعي #4</label>
+                  <input type="file" class="sponsorFour-edit">
+                  <button class="sponsorFour-editBTN">تعديل</button>
+                </div>
+                
+                <div class="gallery">
+                  <br>
+                  <label>إضافة صورة جديدة للمعرض</label>
+                  <input type="file" class="galleryPic-add">
+                  <button class="galleryPic-addBTN">إضافة</button>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Members Section -->
+            <div class="members">
+              <h3>التحكم بالاعضاء</h3>
+              <hr>
+              <table class="table-members">
+                <tr>
+                  <th>أسم العضو</th>
+                  <th>العنوان</th>
+                  <th>رقم الهاتف</th>
+                  <th>البريد الاليكتروني</th>
+                  <th>الرتبة</th>
+                  <th>ترقية</th>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="courses">
+
+              <div class="courses-bar">
+                <button class="control-courses-btn active">التحكم في الكورسات</button>
+                <button class="add-courses-btn">إضافة كورسات</button>
+              </div>
+
+              <div class="control-courses-div">
+                <h3>التحكم بالكورسات</h3>
+                <hr>
+                <table class="table-courses">
+                  <tr>
+                    <th>أسم الكورس</th>
+                    <th>السعر</th>
+                    <th>المدة</th>
+                    <th>عدد الطلاب</th>
+                    <th>أسم المدرب</th>
+                    <th>موعد البدأ</th>
+                    <th>تعديل</th>
+                    <th>الحذف</th>
+                  </tr>
+                </table>
+              </div>
+              
+              <div class="edit-courses-div">
+                <h3>تعديل الكورس</h3>
+                <hr>
+                <div class="edits-container">
+                  <input type="text" placeholder="تعديل أسم الكورس" class="course-name-edit">
+                  <button class="course-name-editBTN">تعديل</button>
+                  <hr>
+                  <input type="number" placeholder="تعديل سعر الكورس" class="course-price-edit">
+                  <button class="course-price-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل مدة الكورس" class="course-duration-edit">
+                  <button class="course-duration-editBTN">تعديل</button>
+                  <hr>
+                  <input type="number" placeholder="تعديل عدد طلاب الكورس" class="course-students-edit">
+                  <button class="course-students-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل أسم مدرب الكورس" class="course-teachname-edit">
+                  <button class="course-teachname-editBTN">تعديل</button>
+                  <hr>
+                  <textarea cols="30" rows="10" placeholder="تعديل تفاصيل الكورس" class="course-details-edit"></textarea>
+                  <button class="course-details-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل موعد بدأ الكورس</label>
+                  <input type="date" class="course-date-edit">
+                  <button class="course-date-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل صورة المدرب</label>
+                  <input type="file" class="course-teachpic-edit">
+                  <button class="course-teachpic-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل غلاف الكورس</label>
+                  <input type="file" class="course-pic-edit">
+                  <button class="course-pic-editBTN">تعديل</button>
+                </div>
+              </div>
+
+              <div class="add-courses-div">
+                <h3>إضافة كورسات</h3>
+                <input type="text" placeholder="أسم الكورس" class="add-course-name">
+                <input type="number" placeholder="سعر الكورس" class="add-course-price">
+                <input type="text" placeholder="مدة الكورس" class="add-course-duration">
+                <input type="number" placeholder="عدد طلاب الكورس" class="add-course-students">
+                <label>موعد بدأ الكورس</label>
+                <input type="date" class="add-course-date">
+                <label>صورة غلاف الكورس</label>
+                <input type="file" class="add-course-picture">
+                <textarea cols="30" rows="10" placeholder="تفاصيل الكورس" class="add-course-about"></textarea>
+                <hr>
+                <input type="text" placeholder="أسم المدرب" class="add-course-teacher">
+                <label>الصورة الشخصية للمدرب</label>
+                <input type="file" class="add-course-teacherPic">
+                <button class="add-course-btn">إضافة الكورس</button>
+              </div>
+
+            </div>
+
+            <!-- Events Section -->
+            <div class="events">
+
+              <div class="events-bar">
+                <button class="control-events-btn active">التحكم في الايفينتات</button>
+                <button class="add-events-btn">إضافة إيفينتات</button>
+              </div>
+
+              <div class="control-events-div">
+                <h3>التحكم بالايفينتات</h3>
+                <hr>
+                <table class="table-events">
+                  <tr>
+                    <th>أسم الايفينت</th>
+                    <th>سعر تذكرة</th>
+                    <th>مكان الاقامة</th>
+                    <th>تاريخ البدأ</th>
+                    <th>توقيت البدأ</th>
+                    <th>تعديل</th>
+                    <th>الحذف</th>
+                  </tr>
+                </table>
+              </div>
+              
+              <div class="edit-events-div">
+                <h3>تعديل الايفينت</h3>
+                <hr>
+                <div class="events-edits-container">
+                  <input type="text" placeholder="تعديل أسم الايفينت" class="event-name-edit">
+                  <button class="event-name-editBTN">تعديل</button>
+                  <hr>
+                  <input type="number" placeholder="تعديل سعر تذكرة الايفينت" class="event-price-edit">
+                  <button class="event-price-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل مكان إقامة الايفينت" class="event-place-edit">
+                  <button class="event-place-editBTN">تعديل</button>
+                  <hr>
+                  <!-- START -->
+                  <section class="editor">
+                    <div class="container">
+                        <!-- COMMANDS BAR -->
+                        <div class="row editorBar">
+                            <div class="col-2 item">
+                                <select onchange="executeCommand('fontName', this.value);">
+                                    <option value="Arial">Arial</option>
+                                    <option value="Comic Sans MS">Comic Sans MS</option>
+                                    <option value="Courier">Courier</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Tahoma">Tahoma</option>
+                                    <option value="Times New Roman">Times New Roman</option>
+                                    <option value="Verdana">Verdana</option>
+                                    <option value="monospace">monospace</option>
+                                </select>
+                            </div>
+                            <div class="col-1 item">
+                                <select onchange="executeCommand('fontSize', this.value);">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+                            <div class="col-1 item E-image">
+                                <i class="fas fa-image" title="Insert Image"></i>
+                            </div>
+                            <div class="col-1 item E-link">
+                                <i class="fas fa-link" title="Insert Link"></i>
+                            </div>
+                            <div class="col-1 item E-unlink">
+                                <i class="fas fa-unlink" title="Unlink"></i>
+                            </div>
+                            <div class="col-1 item E-right">
+                                <i class="fas fa-align-right" title="Align Right"></i>
+                            </div>
+                            <div class="col-1 item E-center">
+                                <i class="fas fa-align-justify" title="Align Center"></i>
+                            </div>
+                            <div class="col-1 item E-left">
+                                <i class="fas fa-align-left" title="Align Left"></i>
+                            </div>
+                            <div class="col-1 item E-indent">
+                                <i class="fas fa-indent" title="indent"></i>
+                            </div>
+                            <div class="col-1 item E-outdent">
+                                <i class="fas fa-outdent" title="outdent"></i>
+                            </div>
+                            <div class="col-1 item E-bold">
+                                <i class="fas fa-bold" title="Make Bold"></i>
+                            </div>
+                            <div class="col-1 item E-italic">
+                                <i class="fas fa-italic" title="Make Italic"></i>
+                            </div>
+                            <div class="col-1 item E-underline">
+                                <i class="fas fa-underline" title="Underline"></i>
+                            </div>
+                            <div class="col-1 item E-strikethrough">
+                                <i class="fas fa-strikethrough" title="Strikethrough"></i>
+                            </div>
+                            <div class="col-1 item E-line">
+                                <i class="fas fa-grip-lines" title="Line"></i>
+                            </div>
+                            <div class="col-1 item E-listu">
+                                <i class="fas fa-list" title="Ordered List"></i>
+                            </div>
+                            <div class="col-1 item E-listo">
+                                <i class="fas fa-list-ol" title="Unordered List"></i>
+                            </div>
+                            <div class="col-1 item E-subscript">
+                                <i class="fas fa-subscript" title="subscript"></i>
+                            </div>
+                            <div class="col-1 item E-superscript">
+                                <i class="fas fa-superscript" title="superscript"></i>
+                            </div>
+                            <div class="col-1 item E-undo">
+                                <i class="fas fa-undo" title="Undo"></i>
+                            </div>
+                            <div class="col-1 item E-select">
+                                <i class="fas fa-object-ungroup" title="Select All"></i>
+                            </div>
+                            <div class="col-2 item E-select">
+                                <i class="fas fa-font" title="Text Color"></i>
+                                <input type="color" onchange="executeCommand('foreColor', this.value);">
+                            </div>
+                            <div class="col-2 item E-select">
+                                <i class="fas fa-fill" title="Text Color"></i>
+                                <input type="color" onchange="executeCommand('hiliteColor', this.value);">
+                            </div>
+                        </div>
+
+                        <!-- TYPING AREA -->
+                        <div class="row editorBody">
+                            <iframe name="editorBody"></iframe>
+                        </div>
+
+                        <!-- SEND BUTTON -->
+                        <button class="event-details-editBTN">تعديل الايفينت</button>
+                    </div>
+                  </section>
+                  <!-- END -->
+                  <hr>
+                  <label>تعديل تاريخ بدأ الايفينت</label>
+                  <input type="date" class="event-date-edit">
+                  <button class="event-date-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل توقيت بدأ الايفينت</label>
+                  <input type="time" class="event-time-edit">
+                  <button class="event-time-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل غلاف الايفينت</label>
+                  <input type="file" class="event-pic-edit">
+                  <button class="event-pic-editBTN">تعديل</button>
+                </div>
+              </div>
+
+              <div class="add-events-div">
+                <h3>إضافة إيفينت</h3>
+                <input type="text" placeholder="أسم الايفينت" class="add-event-name">
+                <input type="number" placeholder="سعر تذكرة الايفينت" class="add-event-price">
+                <input type="text" placeholder="مكان إقامة الايفينت" class="add-event-place">
+                <label>تاريخ بدأ الايفينت</label>
+                <input type="date" class="add-event-date">
+                <label>توقيت بدأ الايفينت</label>
+                <input type="time" class="add-event-time">
+                <label>صورة غلاف الايفينت</label>
+                <input type="file" class="add-event-picture">
+                <!-- START -->
+                <section class="editor">
+                  <div class="container">
+                      <!-- COMMANDS BAR -->
+                      <div class="row editorBar">
+                          <div class="col-2 item">
+                              <select onchange="executeCommandNE('fontName', this.value);">
+                                  <option value="Arial">Arial</option>
+                                  <option value="Comic Sans MS">Comic Sans MS</option>
+                                  <option value="Courier">Courier</option>
+                                  <option value="Georgia">Georgia</option>
+                                  <option value="Tahoma">Tahoma</option>
+                                  <option value="Times New Roman">Times New Roman</option>
+                                  <option value="Verdana">Verdana</option>
+                                  <option value="monospace">monospace</option>
+                              </select>
+                          </div>
+                          <div class="col-1 item">
+                              <select onchange="executeCommandNE('fontSize', this.value);">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                              </select>
+                          </div>
+                          <div class="col-1 item E-image" onclick="executeCommandNE('insertImage', prompt('Enter the image URL'));">
+                              <i class="fas fa-image" title="Insert Image"></i>
+                          </div>
+                          <div class="col-1 item E-link" onclick="executeCommandNE('createLink', prompt('Enter a URL:'));">
+                              <i class="fas fa-link" title="Insert Link"></i>
+                          </div>
+                          <div class="col-1 item E-unlink" onclick="executeCommandNE('unlink');">
+                              <i class="fas fa-unlink" title="Unlink"></i>
+                          </div>
+                          <div class="col-1 item E-right" onclick="executeCommandNE('justifyRight');">
+                              <i class="fas fa-align-right" title="Align Right"></i>
+                          </div>
+                          <div class="col-1 item E-center" onclick="executeCommandNE('justifyCenter');">
+                              <i class="fas fa-align-justify" title="Align Center"></i>
+                          </div>
+                          <div class="col-1 item E-left" onclick="executeCommandNE('justifyLeft');">
+                              <i class="fas fa-align-left" title="Align Left"></i>
+                          </div>
+                          <div class="col-1 item E-indent" onclick="executeCommandNE('indent');">
+                              <i class="fas fa-indent" title="indent"></i>
+                          </div>
+                          <div class="col-1 item E-outdent" onclick="executeCommandNE('outdent');">
+                              <i class="fas fa-outdent" title="outdent"></i>
+                          </div>
+                          <div class="col-1 item E-bold" onclick="executeCommandNE('bold');">
+                              <i class="fas fa-bold" title="Make Bold"></i>
+                          </div>
+                          <div class="col-1 item E-italic" onclick="executeCommandNE('italic');">
+                              <i class="fas fa-italic" title="Make Italic"></i>
+                          </div>
+                          <div class="col-1 item E-underline" onclick="executeCommandNE('underline');">
+                              <i class="fas fa-underline" title="Underline"></i>
+                          </div>
+                          <div class="col-1 item E-strikethrough" onclick="executeCommandNE('strikeThrough');">
+                              <i class="fas fa-strikethrough" title="Strikethrough"></i>
+                          </div>
+                          <div class="col-1 item E-line" onclick="executeCommandNE('insertHorizontalRule');">
+                              <i class="fas fa-grip-lines" title="Line"></i>
+                          </div>
+                          <div class="col-1 item E-listu" onclick="executeCommandNE('insertUnorderedList');">
+                              <i class="fas fa-list" title="Ordered List"></i>
+                          </div>
+                          <div class="col-1 item E-listo" onclick="executeCommandNE('insertOrderedList');">
+                              <i class="fas fa-list-ol" title="Unordered List"></i>
+                          </div>
+                          <div class="col-1 item E-subscript" onclick="executeCommandNE('subscript');">
+                              <i class="fas fa-subscript" title="subscript"></i>
+                          </div>
+                          <div class="col-1 item E-superscript" onclick="executeCommandNE('superscript');">
+                              <i class="fas fa-superscript" title="superscript"></i>
+                          </div>
+                          <div class="col-1 item E-undo" onclick="executeCommandNE('undo');">
+                              <i class="fas fa-undo" title="Undo"></i>
+                          </div>
+                          <div class="col-1 item E-select" onclick="executeCommandNE('selectAll');">
+                              <i class="fas fa-object-ungroup" title="Select All"></i>
+                          </div>
+                          <div class="col-2 item">
+                              <i class="fas fa-font" title="Text Color"></i>
+                              <input type="color" onchange="executeCommandNE('foreColor', this.value);">
+                          </div>
+                          <div class="col-2 item">
+                              <i class="fas fa-fill" title="Text Color"></i>
+                              <input type="color" onchange="executeCommandNE('hiliteColor', this.value);">
+                          </div>
+                      </div>
+
+                      <!-- TYPING AREA -->
+                      <div class="row editorBody">
+                          <iframe name="editorBodyNewEvent" lang="ar"></iframe>
+                      </div>
+
+                      <!-- SEND BUTTON -->
+                      <hr>
+                      <button class="add-event-btn">إضافة إيفينت</button>
+                  </div>
+                </section>
+                <!-- END -->
+              </div>
+            </div>
+
+            <!-- News Section -->
+            <div class="news">
+              
+              <div class="news-bar">
+                <button class="control-news-btn active">التحكم في الاخبار</button>
+                <button class="add-newsSection-btn">إضافة خبر</button>
+              </div>
+
+              <div class="control-news-div">
+                <h3>التحكم الاخبار</h3>
+                <hr>
+                <table class="table-news">
+                  <tr>
+                    <th>عنوان الخبر</th>
+                    <th>الناشر</th>
+                    <th>تعديل</th>
+                    <th>الحذف</th>
+                  </tr>
+                </table>
+              </div>
+              
+              <div class="edit-news-div">
+                <h3>تعديل الخبر</h3>
+                <hr>
+                <div class="news-edits-container">
+                  <input type="text" placeholder="تعديل عنوان الخبر" class="news-name-edit">
+                  <button class="news-name-editBTN">تعديل</button>
+                  <hr>
+                  
+                <!-- START -->
+                <section class="editor">
+                  <div class="container">
+                      <!-- COMMANDS BAR -->
+                      <div class="row editorBar">
+                          <div class="col-2 item">
+                              <select onchange="executeCommandEN('fontName', this.value);">
+                                  <option value="Arial">Arial</option>
+                                  <option value="Comic Sans MS">Comic Sans MS</option>
+                                  <option value="Courier">Courier</option>
+                                  <option value="Georgia">Georgia</option>
+                                  <option value="Tahoma">Tahoma</option>
+                                  <option value="Times New Roman">Times New Roman</option>
+                                  <option value="Verdana">Verdana</option>
+                                  <option value="monospace">monospace</option>
+                              </select>
+                          </div>
+                          <div class="col-1 item">
+                              <select onchange="executeCommandEN('fontSize', this.value);">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                              </select>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('insertImage', prompt('Enter the image URL'));">
+                              <i class="fas fa-image" title="Insert Image"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('createLink', prompt('Enter a URL:'));">
+                              <i class="fas fa-link" title="Insert Link"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('unlink');">
+                              <i class="fas fa-unlink" title="Unlink"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('justifyRight');">
+                              <i class="fas fa-align-right" title="Align Right"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('justifyCenter');">
+                              <i class="fas fa-align-justify" title="Align Center"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('justifyLeft');">
+                              <i class="fas fa-align-left" title="Align Left"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('indent');">
+                              <i class="fas fa-indent" title="indent"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('outdent');">
+                              <i class="fas fa-outdent" title="outdent"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('bold');">
+                              <i class="fas fa-bold" title="Make Bold"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('italic');">
+                              <i class="fas fa-italic" title="Make Italic"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('underline');">
+                              <i class="fas fa-underline" title="Underline"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('strikeThrough');">
+                              <i class="fas fa-strikethrough" title="Strikethrough"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('insertHorizontalRule');">
+                              <i class="fas fa-grip-lines" title="Line"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('insertUnorderedList');">
+                              <i class="fas fa-list" title="Ordered List"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('insertOrderedList');">
+                              <i class="fas fa-list-ol" title="Unordered List"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('subscript');">
+                              <i class="fas fa-subscript" title="subscript"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('superscript');">
+                              <i class="fas fa-superscript" title="superscript"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('undo');">
+                              <i class="fas fa-undo" title="Undo"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandEN('selectAll');">
+                              <i class="fas fa-object-ungroup" title="Select All"></i>
+                          </div>
+                          <div class="col-2 item">
+                              <i class="fas fa-font" title="Text Color"></i>
+                              <input type="color" onchange="executeCommandEN('foreColor', this.value);">
+                          </div>
+                          <div class="col-2 item">
+                              <i class="fas fa-fill" title="Text Color"></i>
+                              <input type="color" onchange="executeCommandEN('hiliteColor', this.value);">
+                          </div>
+                      </div>
+
+                      <!-- TYPING AREA -->
+                      <div class="row editorBody">
+                          <iframe name="editorBodyEditNews"></iframe>
+                      </div>
+
+                      <!-- SEND BUTTON -->
+                      <hr>
+                      <button class="news-details-editBTN">تعديل الخبر</button>
+                  </div>
+                </section>
+                <!-- END -->
+                  <hr>
+                  <label>تعديل غلاف الخبر</label>
+                  <input type="file" class="news-pic-edit">
+                  <button class="news-pic-editBTN">تعديل</button>
+                </div>
+              </div>
+
+              <div class="add-news-div">
+                <h3>إضافة خبر</h3>
+                <input type="text" placeholder="عنوان الخبر" class="add-news-name">
+                <label>صورة غلاف الخبر</label>
+                <input type="file" class="add-news-picture">
+                <!-- START -->
+                <section class="editor">
+                  <div class="container">
+                      <!-- COMMANDS BAR -->
+                      <div class="row editorBar">
+                          <div class="col-2 item">
+                              <select onchange="executeCommandNN('fontName', this.value);">
+                                  <option value="Arial">Arial</option>
+                                  <option value="Comic Sans MS">Comic Sans MS</option>
+                                  <option value="Courier">Courier</option>
+                                  <option value="Georgia">Georgia</option>
+                                  <option value="Tahoma">Tahoma</option>
+                                  <option value="Times New Roman">Times New Roman</option>
+                                  <option value="Verdana">Verdana</option>
+                                  <option value="monospace">monospace</option>
+                              </select>
+                          </div>
+                          <div class="col-1 item">
+                              <select onchange="executeCommandNN('fontSize', this.value);">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                              </select>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('insertImage', prompt('Enter the image URL'));">
+                              <i class="fas fa-image" title="Insert Image"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('createLink', prompt('Enter a URL:'));">
+                              <i class="fas fa-link" title="Insert Link"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('unlink');">
+                              <i class="fas fa-unlink" title="Unlink"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('justifyRight');">
+                              <i class="fas fa-align-right" title="Align Right"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('justifyCenter');">
+                              <i class="fas fa-align-justify" title="Align Center"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('justifyLeft');">
+                              <i class="fas fa-align-left" title="Align Left"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('indent');">
+                              <i class="fas fa-indent" title="indent"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('outdent');">
+                              <i class="fas fa-outdent" title="outdent"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('bold');">
+                              <i class="fas fa-bold" title="Make Bold"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('italic');">
+                              <i class="fas fa-italic" title="Make Italic"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('underline');">
+                              <i class="fas fa-underline" title="Underline"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('strikeThrough');">
+                              <i class="fas fa-strikethrough" title="Strikethrough"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('insertHorizontalRule');">
+                              <i class="fas fa-grip-lines" title="Line"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('insertUnorderedList');">
+                              <i class="fas fa-list" title="Ordered List"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('insertOrderedList');">
+                              <i class="fas fa-list-ol" title="Unordered List"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('subscript');">
+                              <i class="fas fa-subscript" title="subscript"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('superscript');">
+                              <i class="fas fa-superscript" title="superscript"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('undo');">
+                              <i class="fas fa-undo" title="Undo"></i>
+                          </div>
+                          <div class="col-1 item" onclick="executeCommandNN('selectAll');">
+                              <i class="fas fa-object-ungroup" title="Select All"></i>
+                          </div>
+                          <div class="col-2 item">
+                              <i class="fas fa-font" title="Text Color"></i>
+                              <input type="color" onchange="executeCommandNN('foreColor', this.value);">
+                          </div>
+                          <div class="col-2 item">
+                              <i class="fas fa-fill" title="Text Color"></i>
+                              <input type="color" onchange="executeCommandNN('hiliteColor', this.value);">
+                          </div>
+                      </div>
+
+                      <!-- TYPING AREA -->
+                      <div class="row editorBody">
+                          <iframe name="editorBodyNewNews"></iframe>
+                      </div>
+
+                      <!-- SEND BUTTON -->
+                      <hr>
+                      <button class="add-news-btn">إضافة الخبر</button>
+                  </div>
+                </section>
+                <!-- END -->
+              </div>
+
+            </div>
+
+            <!-- Team Section -->
+            <div class="team">
+
+              <div class="team-bar">
+                <button class="control-members-btn active">التحكم في الفريق</button>
+                <button class="add-members-btn">إضافة عضو للفريق</button>
+              </div>
+
+              <div class="control-members-div">
+                <h3>التحكم بالفريق</h3>
+                <hr>
+                <table class="table-team">
+                  <tr>
+                    <th>أسم العضو</th>
+                    <th>المهنة</th>
+                    <th>تعديل</th>
+                    <th>الحذف</th>
+                  </tr>
+                </table>
+              </div>
+              
+              <div class="edit-members-div">
+                <h3>تعديل عضو بالفريق</h3>
+                <hr>
+                <div class="members-edits-container">
+                  <input type="text" placeholder="تعديل أسم العضو" class="member-name-edit">
+                  <button class="member-name-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل المهنة" class="member-work-edit">
+                  <button class="member-work-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل رابط الفيسبوك" class="member-facebook-edit">
+                  <button class="member-facebook-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل رابط تويتر" class="member-twitter-edit">
+                  <button class="member-twitter-editBTN">تعديل</button>
+                  <hr>
+                  <input type="text" placeholder="تعديل لينكيدإن" class="member-linkedin-edit">
+                  <button class="member-linkedin-editBTN">تعديل</button>
+                  <hr>
+                  <textarea cols="30" rows="10" placeholder="تعديل نبذة عن العضو" class="member-about-edit"></textarea>
+                  <button class="member-about-editBTN">تعديل</button>
+                  <hr>
+                  <label>تعديل صورة العضو</label>
+                  <input type="file" class="member-pic-edit">
+                  <button class="member-pic-editBTN">تعديل</button>
+                </div>
+              </div>
+
+              <div class="add-members-div">
+                <h3>إضافة عضو للفريق</h3>
+                <input type="text" placeholder="أسم العضو" class="add-member-name">
+                <input type="text" placeholder="مهنة العضو" class="add-member-work">
+                <input type="url" placeholder="رابط صفحة الفيسبوك" class="add-member-facebook">
+                <input type="url" placeholder="رابط صفحة التويتر" class="add-member-twitter">
+                <input type="url" placeholder="رابط صفحة اللينكيد إن" class="add-member-linkedin">
+                <label>صورة العضو</label>
+                <input type="file" class="add-member-picture">
+                <textarea cols="30" rows="10" placeholder="نبذة عن العضو" class="add-member-details"></textarea>
+                <hr>
+                <button class="add-member-btn">إضافة عضو</button>
+              </div>
+            </div>
+
+            <!-- Registration Section -->
+            <div class="regs">
+              <h3>طلبات الحجوزات</h3>
+              <hr>
+              <h4>الكورسات</h4>
+              <table class="table-requests-courses">
+                <tr>
+                  <th>أسم العضو</th>
+                  <th>العنوان</th>
+                  <th>رقم الهاتف</th>
+                  <th>البريد الاليكتروني</th>
+                  <th>الكورس المحجوز</th>
+                  <th>تاريخ الحجز</th>
+                  <th>حذف الطلب</th>
+                </tr>
+              </table>
+              <hr>
+              <h4>الايفينتات</h4>
+              <table class="table-requests-events">
+                <tr>
+                  <th>أسم العضو</th>
+                  <th>العنوان</th>
+                  <th>رقم الهاتف</th>
+                  <th>البريد الاليكتروني</th>
+                  <th>الايفينت المحجوز</th>
+                  <th>تاريخ الحجز</th>
+                  <th>حذف الطلب</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Control Panel -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-7 col-12 footer-intro">
+              <img src="images/logo.jpg" alt="logo" class="thumb-sm circle ml-2">
+              <h3>سوبر إيفينتاوي</h3>
+              <br>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية.</p>
+          </div>
+          <div class="col-md-4 d-none d-md-block footer-links">
+            <h4>روابط مهمة</h4>
+            <ul>
+              <li onclick="location.href = 'index.html'">الرئيسية</li>
+              <li onclick="location.href = 'courses.html'">الكورسات</li>
+              <li onclick="location.href = 'events.html'">الايفينتات</li>
+              <li onclick="location.href = 'news.html'">الاخبار</li>
+              <li onclick="location.href = 'team.html'">الفريق</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-5 col-12 footer-address">
+            <h4>كيف تصل إلينا</h4>
+            <div class="type1">
+              <h5><img src="images/map.svg" class="icon"> العنوان</h5>
+              <p>سوهاج المتفرع من ش سوهاج</p>
+            </div>
+            <div class="type2">
+              <h5><img src="images/phone.svg" class="icon"> الموبايل</h5>
+              <p class="ph">+201146321817</p>
+            </div>
+          </div>
+        </div>
+        <div class="end"><p>تصميم و برمجة فريق <span>BroCoders</span> &nbsp; | &nbsp; جميع الحقوق محفوظة 2019</p></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- JQuery Library -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Page Custom Scripts -->
+    <script src="js/custom.js"></script>
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <!-- auth & database Scripts -->
+    <script src="js/firebase.js"></script>
+  </body>
+</html>
